@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andi Pratama | Proyek</title>
+  <title>A. Fauruz Thoriq | Proyek</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
@@ -12,75 +12,70 @@
 <body>
   <header>
     <div class="container navbar">
-      <h1>Akhmad Fauruz thoriq</h1>
+      <h1>A. Fauruz Thoriq</h1>
       <nav class="menu-laptop">
         <ul>
           <li><a href="index.html">Beranda</a></li>
           <li><a href="proyek.html">Proyek</a></li>
           <li><a href="kontak.html">Kontak</a></li>
+          <li><button class="tombol-tema">🌙</button></li>
         </ul>
       </nav>
-      <!-- Tantangan: menu ponsel yang bisa dibuka-tutup -->
       <details class="menu-ponsel">
         <summary>Menu</summary>
-        <nav>
-          <ul>
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="proyek.html">Proyek</a></li>
-            <li><a href="kontak.html">Kontak</a></li>
-          </ul>
-        </nav>
+        <nav><ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="proyek.html">Proyek</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li><button class="tombol-tema">🌙</button></li>
+        </ul></nav>
       </details>
     </div>
   </header>
 
   <main>
     <div class="container">
-      <section>
-        <h2>Proyek Saya</h2>
-        <p>Kumpulan hasil belajar saya di Kelas Industri UBIG.</p>
+      <h2>Proyek Saya</h2>
+      <p>Kumpulan hasil belajar saya di Kelas Industri UBIG.</p>
 
-        <div class="daftar-kartu">
-          <article class="kartu">
-            <h3>Halaman Profil Pertama</h3>
-            <img src="img/proyek-profil.png" alt="Tangkapan layar halaman profil Andi Pratama" width="280">
-            <p>Halaman web pertama saya, berisi perkenalan, foto, hobi, cita-cita, keahlian, dan kontak. Dibuat dengan HTML dasar di Minggu 01.</p>
-          </article>
+      <div class="filter-container">
+        <button class="filter-btn aktif" data-kategori="Semua">Semua</button>
+        <button class="filter-btn" data-kategori="HTML">HTML</button>
+        <button class="filter-btn" data-kategori="Form">Form</button>
+        <button class="filter-btn" data-kategori="Tabel">Tabel</button>
+      </div>
 
-          <article class="kartu">
-            <h3>Form Kontak</h3>
-            <img src="img/proyek-kontak.png" alt="Tangkapan layar form kontak berisi nama, email, nomor HP, keperluan, dan pesan" width="280">
-            <p>Form untuk menghubungi saya. Setiap isian memiliki label dan wajib diisi, sehingga browser menolak form yang masih kosong.</p>
-          </article>
+      <div class="daftar-kartu">
+        <article class="kartu proyek-item" data-kategori="HTML">
+          <h3>Halaman Profil Pertama</h3>
+          <img src="img/proyek-profil.png" alt="Halaman profil">
+          <p>Halaman web pertama saya, berisi perkenalan, foto, hobi, cita-cita, keahlian, dan kontak. Dibuat dengan HTML dasar di Minggu 01.</p>
+        </article>
+        <article class="kartu proyek-item" data-kategori="Form">
+          <h3>Form Kontak</h3>
+          <img src="img/proyek-kontak.png" alt="Form kontak">
+          <p>Form untuk menghubungi saya. Setiap isian memiliki label dan wajib diisi, sehingga browser menolak form yang masih kosong.</p>
+        </article>
+        <article class="kartu proyek-item" data-kategori="Tabel">
+          <h3>Tabel Jadwal Belajar</h3>
+          <img src="img/proyek-jadwal.png" alt="Tabel jadwal">
+          <p>Tabel berisi jadwal belajar mandiri saya setiap minggu, disusun dengan thead dan tbody.</p>
+        </article>
+      </div>
 
-          <article class="kartu">
-            <h3>Tabel Jadwal Belajar</h3>
-            <img src="img/proyek-jadwal.png" alt="Tangkapan layar tabel jadwal belajar mandiri" width="280">
-            <p>Tabel berisi jadwal belajar mandiri saya setiap minggu, disusun dengan thead dan tbody.</p>
-          </article>
-        </div>
-      </section>
-
-      <!-- FAQ dengan details dan summary -->
       <section class="kartu">
         <h2>Pertanyaan yang Sering Diajukan</h2>
-        <details>
-          <summary>Bahasa apa yang dipakai untuk membuat proyek ini?</summary>
-          <p>Semua proyek di halaman ini dibuat dengan HTML. Tampilannya akan saya rapikan dengan CSS mulai Minggu 03.</p>
-        </details>
-        <details>
-          <summary>Apakah saya menerima pesanan pembuatan website?</summary>
-          <p>Belum, saya masih belajar. Namun kamu tetap boleh menghubungi saya melalui halaman Kontak.</p>
-        </details>
+        <details><summary>Bahasa apa yang dipakai?</summary><p>Semua proyek ini dibuat dengan HTML, dirapikan dengan CSS.</p></details>
+        <details><summary>Apakah menerima pesanan website?</summary><p>Belum, saya masih belajar. Tapi boleh hubungi saya lewat halaman Kontak.</p></details>
       </section>
     </div>
   </main>
 
   <footer>
-    <p>Kontak: <a href="mailto:kingz1945@example.com">kingz1945@example.com</a> |
-      <a href="https://github.com/" target="_blank">GitHub</a> |
-      <a href="https://www.youtube.com/" target="_blank">YouTube</a></p>
-    <p>&copy; 2026 Thoriq. Dibuat di Kelas Industri UBIG.</p>
+    <p>Kontak: <a href="mailto:akhmadfauruzthoriq771@example.com">akhmadfauruzthoriq771@example.com</a> | <a href="https://github.com/" target="_blank">GitHub</a> | <a href="https://www.youtube.com/" target="_blank">YouTube</a></p>
+    <p>&copy; 2026 Akhmad Fauruz Thoriq. Dibuat di Kelas Industri UBIG.</p>
   </footer>
+</header>
+<script src="js/logika.js"></script>
 </body>
 </html>

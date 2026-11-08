@@ -41,4 +41,51 @@ function hargaSetelahDiskon(total) {
     } else {
         return total;
     }
+}// 1. TEMA GELAP - jalan di semua halaman
+if (localStorage.getItem("tema") === "gelap") {
+  document.body.classList.add("gelap");
+}
+
+document.querySelectorAll(".tombol-tema").forEach(function (tombol) {
+  tombol.addEventListener("click", function () {
+    document.body.classList.toggle("gelap");
+    if (document.body.classList.contains("gelap")) {
+      localStorage.setItem("tema", "gelap");
+    } else {
+      localStorage.setItem("tema", "terang");
+    }
+  });
+});
+
+// 2. FILTER PROYEK - cuma jalan di halaman proyek
+var tombolFilter = document.querySelectorAll(".filter-btn");
+var semuaProyek = document.querySelectorAll(".proyek-item");
+if (tombolFilter.length > 0) {
+  tombolFilter.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      tombolFilter.forEach(function (b) { b.classList.remove("aktif"); });
+      btn.classList.add("aktif");
+      var kat = btn.dataset.kategori;
+      semuaProyek.forEach(function (item) {
+        if (kat === "Semua" || item.dataset.kategori === kat) {
+          item.style.display = "";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  });
+}
+
+// 3. FORM KONTAK - cuma jalan di halaman kontak
+var formKontak = document.getElementById("form-kontak");
+if (formKontak) {
+  formKontak.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var nama = document.getElementById("nama").value;
+    var keperluan = document.getElementById("keperluan").value;
+    document.getElementById("hasil-pesan").textContent =
+      "Terima kasih " + nama + ", pesanmu untuk " + keperluan + " sudah terkirim!";
+    formKontak.reset();
+  });
 }
