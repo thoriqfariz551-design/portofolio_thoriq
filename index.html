@@ -4,41 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A. Fauruz Thoriq | Beranda</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
     <div class="container navbar">
       <h1>A. Fauruz Thoriq</h1>
-      <nav class="menu-laptop">
+      <nav>
         <ul>
-          <li><a href="index.html">Beranda</a></li>
+            <li><a href="index.html">Beranda</a></li>
           <li><a href="proyek.html">Proyek</a></li>
-          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="kontak.html" class="aktif">Kontak</a></li>
+           <li><a href="kalkulator.html" class="aktif">Kalkulator</a></li>
           <li><button class="tombol-tema">🌙</button></li>
         </ul>
       </nav>
-      <details class="menu-ponsel">
-        <summary>Menu</summary>
-        <nav>
-          <ul>
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="proyek.html">Proyek</a></li>
-            <li><a href="kontak.html">Kontak</a></li>
-            <li><button class="tombol-tema">🌙</button></li>
-          </ul>
-        </nav>
-      </details>
     </div>
   </header>
 
   <main>
     <div class="container">
       <section class="hero">
-        <img src="img/foto-profil.jpg"foto-profil" width="180">
+        <img src="img/foto-profil.jpg" alt="Foto profil Fauruz" width="180">
         <div>
           <h2>Halo, saya Fariz! - WEB DEVELOPMENT</h2>
           <p>Siswa kelas 10 SMKN 1 Pasuruan, calon Junior Web Developer di Kelas Industri UBIG.</p>
@@ -48,7 +35,7 @@
 
       <section class="kartu">
         <h2>Tentang Saya</h2>
-        <p>Saya tinggal di Pasuruan dan senang mencoba hal baru di dunia teknologi. Saya ingin bisa membuat website yang bermanfaat untuk sekolah dan UMKM di sekitar rumah.</p>
+        <p>Saya tinggal di Pasuruan dan senang mencoba hal baru di dunia teknologi. Saya ingin membuat website yang bermanfaat untuk sekolah dan UMKM di sekitar rumah.</p>
       </section>
 
       <div class="daftar-kartu">
@@ -58,19 +45,18 @@
         </section>
         <section class="kartu">
           <h2>Cita-cita</h2>
-          <p>Menjadi <strong>Full Stack Web Developer</strong>. Langkah yang saya rencanakan:</p>
+          <p>Menjadi <strong>Full Stack Web Developer</strong>.</p>
           <ol><li>Menuntaskan Kelas Industri UBIG sampai Semester 4</li><li>Magang di perusahaan teknologi</li><li>Bekerja sebagai Web Developer</li></ol>
         </section>
         <section class="kartu">
           <h2>Keahlian</h2>
-          <ul><li>HTML dasar (sedang dipelajari)</li><li>Mengetik cepat</li><li>Desain poster dengan Canva</li></ul>
+          <ul id="skill-list"><li>HTML dasar</li></ul>
         </section>
       </div>
 
       <section class="kartu">
         <h2>Jadwal Belajar</h2>
         <table>
-          <caption>Jadwal belajar mandiri setiap minggu</caption>
           <thead><tr><th>Hari</th><th>Waktu</th><th>Kegiatan</th></tr></thead>
           <tbody>
             <tr><td>Senin</td><td>19.00 - 20.00</td><td>Membaca ulang modul</td></tr>
@@ -81,11 +67,15 @@
       </section>
     </div>
   </main>
+
   <footer>
-    <p>Kontak: <a href="mailto:akhmadfauruzthoriq771@example.com">akhmadfauruzthoriq771@example.com</a> | <a href="https://github.com/" target="_blank">GitHub</a> | <a href="https://www.youtube.com/" target="_blank">YouTube</a></p>
-    <p>&copy; 2026 Akhmad Fauruz Thoriq. Dibuat di Kelas Industri UBIG.</p>
-  </footer>
-</header>
-<script src="js/logika.js"></script>
+  <p>&copy; 2026 Akhmad Fauruz Thoriq. Dibuat di Kelas Industri UBIG.</p>
+  <p>
+    <a href="mailto:emailkamu@gmail.com">Email</a> |
+    <a href="https://github.com/usernamekamu" target="_blank">GitHub</a> |
+    <a href="https://youtube.com/@channelkamu" target="_blank">YouTube</a>
+  </p>
+</footer>
+  <script src="logika.js"></script>
 </body>
 </html>

@@ -4,32 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A. Fauruz Thoriq | Proyek</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
     <div class="container navbar">
       <h1>A. Fauruz Thoriq</h1>
-      <nav class="menu-laptop">
+      <nav>
         <ul>
-          <li><a href="index.html">Beranda</a></li>
+           <li><a href="index.html">Beranda</a></li>
           <li><a href="proyek.html">Proyek</a></li>
-          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="kontak.html" class="aktif">Kontak</a></li>
+           <li><a href="kalkulator.html" class="aktif">Kalkulator</a></li>
           <li><button class="tombol-tema">🌙</button></li>
         </ul>
       </nav>
-      <details class="menu-ponsel">
-        <summary>Menu</summary>
-        <nav><ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="proyek.html">Proyek</a></li>
-          <li><a href="kontak.html">Kontak</a></li>
-          <li><button class="tombol-tema">🌙</button></li>
-        </ul></nav>
-      </details>
     </div>
   </header>
 
@@ -43,6 +32,7 @@
         <button class="filter-btn" data-kategori="HTML">HTML</button>
         <button class="filter-btn" data-kategori="Form">Form</button>
         <button class="filter-btn" data-kategori="Tabel">Tabel</button>
+        <button class="filter-btn" data-kategori="JavaScript">JavaScript</button>
       </div>
 
       <div class="daftar-kartu">
@@ -54,12 +44,17 @@
         <article class="kartu proyek-item" data-kategori="Form">
           <h3>Form Kontak</h3>
           <img src="img/proyek-kontak.png" alt="Form kontak">
-          <p>Form untuk menghubungi saya. Setiap isian memiliki label dan wajib diisi, sehingga browser menolak form yang masih kosong.</p>
+          <p>Form untuk menghubungi saya. Setiap isian memiliki label dan wajib diisi.</p>
         </article>
         <article class="kartu proyek-item" data-kategori="Tabel">
           <h3>Tabel Jadwal Belajar</h3>
           <img src="img/proyek-jadwal.png" alt="Tabel jadwal">
           <p>Tabel berisi jadwal belajar mandiri saya setiap minggu, disusun dengan thead dan tbody.</p>
+        </article>
+        <article class="kartu proyek-item" data-kategori="JavaScript">
+          <h3>Proyek JavaScript</h3>
+          <img src="img/javascript.png" alt="Proyek JavaScript">
+          <p>Proyek pertama saya menggunakan JavaScript, contohnya dark mode dan filter proyek.</p>
         </article>
       </div>
 
@@ -71,11 +66,14 @@
     </div>
   </main>
 
-  <footer>
-    <p>Kontak: <a href="mailto:akhmadfauruzthoriq771@example.com">akhmadfauruzthoriq771@example.com</a> | <a href="https://github.com/" target="_blank">GitHub</a> | <a href="https://www.youtube.com/" target="_blank">YouTube</a></p>
-    <p>&copy; 2026 Akhmad Fauruz Thoriq. Dibuat di Kelas Industri UBIG.</p>
-  </footer>
-</header>
-<script src="js/logika.js"></script>
+ <footer>
+  <p>&copy; 2026 Akhmad Fauruz Thoriq. Dibuat di Kelas Industri UBIG.</p>
+  <p>
+    <a href="mailto:emailkamu@gmail.com">Email</a> |
+    <a href="https://github.com/usernamekamu" target="_blank">GitHub</a> |
+    <a href="https://youtube.com/@channelkamu" target="_blank">YouTube</a>
+  </p>
+</footer>
+  <script src="logika.js"></script>
 </body>
 </html>
