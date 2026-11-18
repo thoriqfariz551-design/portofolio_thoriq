@@ -1,0 +1,6 @@
+[
+  { "id": 1, "nama": "HTML", "level": "Mahir" },
+  { "id": 2, "nama": "CSS", "level": "Mahir" },
+  { "id": 3, "nama": "JavaScript", "level": "Menengah" },
+  { "id": 4, "nama": "Git & GitHub", "level": "Menengah" }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "judul": "Halaman Profil Pertama",
+    "kategori": "html",
+    "deskripsi": "Halaman web pertama saya, berisi perkenalan dan foto profil.",
+    "link": "index.html",
+    "gambar": "img/proyek-profil.png"
+  },
+  {
+    "id": 2,
+    "judul": "Form Kontak",
+    "kategori": "form",
+    "deskripsi": "Form kontak dengan validasi dan hitung karakter.",
+    "link": "kontak.html",
+    "gambar": "img/proyek-kontak.png"
+  },
+  {
+    "id": 3,
+    "judul": "Tabel Jadwal Belajar",
+    "kategori": "tabel",
+    "deskripsi": "Tabel jadwal belajar mingguan.",
+    "link": "index.html",
+    "gambar": "img/proyek-jadwal.png"
+  },
+  {
+    "id": 4,
+    "judul": "Kalkulator",
+    "kategori": "javascript",
+    "deskripsi": "Kalkulator sederhana menggunakan JavaScript.",
+    "link": "kalkulator.html",
+    "gambar": "img/javascript.png"
+  }
+]

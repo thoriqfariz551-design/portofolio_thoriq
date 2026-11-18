@@ -12,10 +12,10 @@
       <h1>A. Fauruz Thoriq</h1>
       <nav>
         <ul>
-            <li><a href="index.html">Beranda</a></li>
+          <li><a href="index.html" class="aktif">Beranda</a></li>
           <li><a href="proyek.html">Proyek</a></li>
-          <li><a href="kontak.html" class="aktif">Kontak</a></li>
-           <li><a href="kalkulator.html" class="aktif">Kalkulator</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="kalkulator.html">Kalkulator</a></li>
           <li><button class="tombol-tema">🌙</button></li>
         </ul>
       </nav>
@@ -50,7 +50,8 @@
         </section>
         <section class="kartu">
           <h2>Keahlian</h2>
-          <ul id="skill-list"><li>HTML dasar</li></ul>
+          <p id="loading-keahlian">Memuat...</p>
+          <ul id="skill-list"></ul>
         </section>
       </div>
 
@@ -65,17 +66,25 @@
           </tbody>
         </table>
       </section>
+
+      <!-- BARU: Repositori GitHub dari API -->
+      <section class="kartu">
+        <h2>Repositori GitHub Saya</h2>
+        <p id="loading-github">Memuat...</p>
+        <div id="daftar-github"></div>
+      </section>
+
     </div>
   </main>
 
   <footer>
-  <p>&copy; 2026 Akhmad Fauruz Thoriq. Dibuat di Kelas Industri UBIG.</p>
-  <p>
-    <a href="mailto:emailkamu@gmail.com">Email</a> |
-    <a href="https://github.com/usernamekamu" target="_blank">GitHub</a> |
-    <a href="https://youtube.com/@channelkamu" target="_blank">YouTube</a>
-  </p>
-</footer>
+    <p>&copy; 2026 Akhmad Fauruz Thoriq. Dibuat di Kelas Industri UBIG.</p>
+    <p>
+      <a href="mailto:emailkamu@gmail.com">Email</a> |
+      <a href="https://github.com/usernamekamu" target="_blank">GitHub</a> |
+      <a href="https://youtube.com/@channelkamu" target="_blank">YouTube</a>
+    </p>
+  </footer>
   <script src="logika.js"></script>
 </body>
 </html>
