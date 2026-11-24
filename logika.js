@@ -97,7 +97,7 @@ async function muatSemuaData() {
             ${p.gambar ? `<img src="${p.gambar}" alt="${p.judul}">` : ""}
             <p>${p.deskripsi}</p>
             <p><span class="tag">${p.kategori}</span></p>
-            <a href="${p.link}">Lihat Proyek</a>
+            <a href="${p.link}">Lihat proyek ${p.judul}</a>
           </article>`;
       });
       if (loadingProyek) loadingProyek.textContent = "";
@@ -155,7 +155,7 @@ async function muatSemuaData() {
           <div class="kartu-kecil">
             <h3>${repo.name}</h3>
             <p>${repo.description || "Tidak ada deskripsi"}</p>
-            <a href="${repo.html_url}" target="_blank">Buka di GitHub</a>
+            <a href="${repo.html_url}" target="_blank" rel="noopener">Lihat repositori ${repo.name} di GitHub</a>
           </div>`;
       });
       if (loadingGithub) loadingGithub.textContent = "";
