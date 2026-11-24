@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A. Fauruz Thoriq | Kontak</title>
+  <meta name="description" content="Hubungi A. Fauruz Thoriq melalui formulir kontak untuk bertanya, kerjasama, atau keperluan lainnya. Respon cepat untuk siswa SMKN 1 Pasuruan.">
+  <link rel="icon" href="data:,">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,9 +16,9 @@
         <ul>
           <li><a href="index.html">Beranda</a></li>
           <li><a href="proyek.html">Proyek</a></li>
-          <li><a href="kontak.html" class="aktif">Kontak</a></li>
-           <li><a href="kalkulator.html" class="aktif">Kalkulator</a></li>
-          <li><button class="tombol-tema">🌙</button></li>
+          <li><a href="kontak.html" class="aktif" aria-current="page">Kontak</a></li>
+          <li><a href="kalkulator.html">Kalkulator</a></li>
+          <li><button class="tombol-tema" aria-label="Ganti tema gelap dan terang">🌙</button></li>
         </ul>
       </nav>
     </div>
@@ -27,59 +29,52 @@
       <h2>Hubungi Saya</h2>
       <section class="kartu">
         <form id="form-kontak">
-          <label for="nama">Nama:</label>
-          <input type="text" id="nama" required placeholder="Nama kamu">
-         <!-- Tambahan: Email -->
-<div class="form-group">
-  <label for="email">Email:</label>
-  <input 
-    type="email" 
-    id="email" 
-    name="email" 
-    placeholder="nama@gmail.com" 
-    required
-  >
-</div>
+          <div class="form-group">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required placeholder="Nama kamu" autocomplete="name">
+          </div>
 
-<!-- Tambahan: Nomor HP -->
-<div class="form-group">
-  <label for="noHP">Nomor HP:</label>
-  <input 
-    type="tel" 
-    id="noHP" 
-    name="noHP" 
-    placeholder="081234567890" 
-    pattern="[0-9]{10,13}"
-    required
-  >
-</div>
-          <label for="keperluan">Keperluan:</label>
-          <select id="keperluan" required>
-            <option value="">Pilih keperluan</option>
-            <option value="Bertanya">Bertanya</option>
-            <option value="Kerjasama">Kerjasama</option>
-            <option value="Lainnya">Lainnya</option>
-          </select>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="nama@gmail.com" required autocomplete="email">
+          </div>
 
-          <label for="pesan">Pesan:</label>
-          <textarea id="pesan" rows="4" maxlength="200" required placeholder="Tulis pesanmu..."></textarea>
-          <p id="hitung-karakter">0 / 200 karakter</p>
+          <div class="form-group">
+            <label for="noHP">Nomor HP:</label>
+            <input type="tel" id="noHP" name="noHP" placeholder="081234567890" pattern="[0-9]{10,13}" required autocomplete="tel">
+          </div>
+
+          <div class="form-group">
+            <label for="keperluan">Keperluan:</label>
+            <select id="keperluan" name="keperluan" required>
+              <option value="">Pilih keperluan</option>
+              <option value="Bertanya">Bertanya</option>
+              <option value="Kerjasama">Kerjasama</option>
+              <option value="Lainnya">Lainnya</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" rows="4" maxlength="200" required placeholder="Tulis pesanmu..."></textarea>
+            <p id="hitung-karakter" aria-live="polite">0 / 200 karakter</p>
+          </div>
 
           <button type="submit" class="tombol">Kirim Pesan</button>
         </form>
-        <p id="hasil-pesan"></p>
+        <p id="hasil-pesan" aria-live="polite"></p>
       </section>
     </div>
   </main>
 
   <footer>
-  <p>&copy; 2026 Akhmad Fauruz Thoriq. Dibuat di Kelas Industri UBIG.</p>
-  <p>
-    <a href="mailto:emailkamu@gmail.com">Email</a> |
-    <a href="https://github.com/usernamekamu" target="_blank">GitHub</a> |
-    <a href="https://youtube.com/@channelkamu" target="_blank">YouTube</a>
-  </p>
-</footer>
-  <script src="logika.js"></script>
+    <p>&copy; 2026 Akhmad Fauruz Thoriq. Dibuat di Kelas Industri UBIG.</p>
+    <p>
+      <a href="mailto:emailkamu@gmail.com">Email</a> |
+      <a href="https://github.com/usernamekamu" target="_blank" rel="noopener">GitHub</a> |
+      <a href="https://youtube.com/@channelkamu" target="_blank" rel="noopener">YouTube</a>
+    </p>
+  </footer>
+  <script src="./logika.js"></script>
 </body>
 </html>

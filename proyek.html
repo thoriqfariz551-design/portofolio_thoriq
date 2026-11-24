@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A. Fauruz Thoriq | Proyek</title>
+  <meta name="description" content="Kumpulan proyek A. Fauruz Thoriq di Kelas Industri UBIG.">
+  <link rel="icon" href="data:,[STRIPPED]
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,21 +15,18 @@
       <nav>
         <ul>
           <li><a href="index.html">Beranda</a></li>
-          <li><a href="proyek.html" class="aktif">Proyek</a></li>
+          <li><a href="proyek.html" class="aktif" aria-current="page">Proyek</a></li>
           <li><a href="kontak.html">Kontak</a></li>
           <li><a href="kalkulator.html">Kalkulator</a></li>
-          <li><button class="tombol-tema">🌙</button></li>
+          <li><button class="tombol-tema" aria-label="Ganti tema gelap dan terang">🌙</button></li>
         </ul>
       </nav>
     </div>
   </header>
-
   <main>
     <div class="container">
       <h2>Proyek Saya</h2>
       <p>Kumpulan hasil belajar saya di Kelas Industri UBIG.</p>
-
-      <!-- TOMBOL FILTER - UDAH BENER -->
       <div class="filter-buttons">
         <button class="filter-btn aktif" data-kategori="semua">Semua</button>
         <button class="filter-btn" data-kategori="html">HTML</button>
@@ -35,12 +34,8 @@
         <button class="filter-btn" data-kategori="tabel">Tabel</button>
         <button class="filter-btn" data-kategori="javascript">JavaScript</button>
       </div>
-
-      <!-- BENERIN: INI DIKOSONGIN, BIAR DIISI OTOMATIS DARI data/proyek.json -->
-      <!-- Jangan taruh 4 kartu manual di sini lagi, nanti dobel -->
       <p id="loading-proyek">Memuat...</p>
       <div class="daftar-kartu" id="daftar-proyek"></div>
-
       <section class="kartu">
         <h2>Pertanyaan yang Sering Diajukan</h2>
         <details><summary>Bahasa apa yang dipakai?</summary><p>Semua proyek ini dibuat dengan HTML, dirapikan dengan CSS.</p></details>
@@ -48,14 +43,9 @@
       </section>
     </div>
   </main>
-
   <footer>
     <p>&copy; 2026 Akhmad Fauruz Thoriq. Dibuat di Kelas Industri UBIG.</p>
-    <p>
-      <a href="mailto:emailkamu@gmail.com">Email</a> |
-      <a href="https://github.com/octocat" target="_blank">GitHub</a> |
-      <a href="https://youtube.com/@channelkamu" target="_blank">YouTube</a>
-    </p>
+    <p><a href="mailto:emailkamu@gmail.com">Email</a> | <a href="https://github.com/usernamekamu" target="_blank" rel="noopener">GitHub</a> | <a href="https://youtube.com/@channelkamu" target="_blank" rel="noopener">YouTube</a></p>
   </footer>
   <script src="logika.js"></script>
 </body>

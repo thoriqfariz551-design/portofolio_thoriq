@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kalkulator Nilai | A. Fauruz Thoriq</title>
+  <meta name="description" content="Kalkulator Nilai milik A. Fauruz Thoriq untuk menghitung nilai akhir dari Tugas, UTS, dan UAS beserta predikat dan status kelulusan.">
+  <link rel="icon" href="data:,[STRIPPED]
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,8 +17,8 @@
           <li><a href="index.html">Beranda</a></li>
           <li><a href="proyek.html">Proyek</a></li>
           <li><a href="kontak.html">Kontak</a></li>
-           <li><a href="kalkulator.html" class="aktif">Kalkulator</a></li>
-          <li><button class="tombol-tema">🌙</button></li>
+          <li><a href="kalkulator.html" class="aktif" aria-current="page">Kalkulator</a></li>
+          <li><button class="tombol-tema" aria-label="Ganti tema gelap dan terang">🌙</button></li>
         </ul>
       </nav>
     </div>
@@ -29,7 +31,7 @@
 
       <section class="kartu">
         <label for="nama">Nama:</label>
-        <input type="text" id="nama" placeholder="Nama kamu">
+        <input type="text" id="nama" placeholder="Nama kamu" autocomplete="name">
 
         <label for="tugas">Nilai Tugas:</label>
         <input type="number" id="tugas" placeholder="0 - 100" min="0" max="100">
@@ -41,13 +43,11 @@
         <input type="number" id="uas" placeholder="0 - 100" min="0" max="100">
 
         <br><br>
-        <button class="filter-btn aktif" onclick="hitungNilai()">Hitung Nilai</button>
-        <button class="filter-btn" onclick="resetNilai()">Reset</button>
+        <button type="button" class="filter-btn aktif" onclick="hitungNilai()">Hitung Nilai</button>
+        <button type="button" class="filter-btn" onclick="resetNilai()">Reset</button>
 
-        <div id="hasil" style="margin-top: 20px;"></div>
+        <div id="hasil" aria-live="polite" style="margin-top: 20px;"></div>
       </section>
-
-    
     </div>
   </main>
 
@@ -57,15 +57,19 @@
 
   <script>
     function hitungNilai() {
-      const nama = document.getElementById("nama").value;
-      const tugas = Number(document.getElementById("tugas").value);
-      const uts = Number(document.getElementById("uts").value);
-      const uas = Number(document.getElementById("uas").value);
+      const nama = document.getElementById("nama").value.trim();
+      const tugasRaw = document.getElementById("tugas").value;
+      const utsRaw = document.getElementById("uts").value;
+      const uasRaw = document.getElementById("uas").value;
 
-      if (!nama || tugas === "" || uts === "" || uas === "") {
-        document.getElementById("hasil").innerHTML = "<p style='color:red'>Isi semua kolom dulu!</p>";
+      if (!nama || tugasRaw === "" || utsRaw === "" || uasRaw === "") {
+        document.getElementById("hasil").innerHTML = "<p class='error-text'>Isi semua kolom dulu!</p>";
         return;
       }
+
+      const tugas = Number(tugasRaw);
+      const uts = Number(utsRaw);
+      const uas = Number(uasRaw);
 
       // Hitung nilai akhir: Tugas 30% + UTS 30% + UAS 40%
       const akhir = (tugas * 0.3) + (uts * 0.3) + (uas * 0.4);
